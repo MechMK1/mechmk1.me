@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>File Upload MK1</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+		<!-- Custom styles -->
+		<link href="/assets/css/jquery.dm-uploader.min.css" rel="stylesheet">
+		<link href="/assets/css/styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<main role="main" class="container">
+
+			<h1>File Upload MK1</h1>
+			<p class="lead mb-4">
+				A very lightweight file uploading service using asynchronous requests.
+				Select one or more files to get started!
+			</p>
+
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					
+					<!-- Our markup, the important part here! -->
+					<div id="drag-and-drop-zone" class="dm-uploader p-5">
+						<h3 class="mb-5 mt-5 text-muted">Drag &amp; drop files here</h3>
+
+						<div class="btn btn-primary btn-block mb-5">
+								<span>Open the file Browser</span>
+								<input type="file" title='Click to add Files' />
+						</div>
+					</div><!-- /uploader -->
+
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="card h-100">
+						<div class="card-header">
+							File List
+						</div>
+
+						<ul class="list-unstyled p-2 d-flex flex-column col" id="files">
+							<li class="text-muted text-center empty">No files uploaded.</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- /file list -->
+
+
+			<div class="row">
+				<div class="col-12">
+					 <div class="card h-100">
+						<div class="card-header">
+							Debug Messages
+						</div>
+
+						<ul class="list-group list-group-flush" id="debug">
+							<li class="list-group-item text-muted empty">Loading plugin....</li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- /debug -->
+
+		</main> <!-- /container -->
+
+		<footer class="text-center">
+				<p>&copy; David Stockinger &middot; <a href="https://mechmk1.me">mechmk1.me</a> &mdash; Based on work of <a href="https://www.danielmg.org/">Daniel Morales</a></p>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>		
+
+		<script src="/assets/js/jquery.dm-uploader.min.js"></script>
+		<script src="/assets/js/demo-ui.js"></script>
+		<script src="/assets/js/demo-config.js"></script>
+
+		<!-- File item template -->
+		<script type="text/html" id="files-template">
+			<li class="media">
+				<div class="media-body mb-1">
+					<p class="mb-2">
+						<strong>%%filename%%</strong> - Status: <span class="text-muted">Waiting</span>
+					</p>
+					<div class="progress mb-2">
+						<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" 
+							role="progressbar"
+							style="width: 0%" 
+							aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+						</div>
+					</div>
+					<hr class="mt-1 mb-1" />
+				</div>
+			</li>
+		</script>
+
+		<!-- Debug item template -->
+		<script type="text/html" id="debug-template">
+			<li class="list-group-item text-%%color%%"><strong>%%date%%</strong>: %%message%%</li>
+		</script>
+	</body>
+</html>

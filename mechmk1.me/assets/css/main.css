@@ -1,0 +1,55 @@
+header img {
+	vertical-align: baseline;
+}
+
+header svg {
+	display: inline-block;
+	height: 1rem;
+}
+
+.text-main {
+	font-size: 4rem;
+}
+
+.bg-purple {
+	background-color: #490088;
+}
+
+.bg-purple-bright {
+	background-color: #6400FF;
+}
+
+.text-purple {
+	color: #490088;
+}
+
+.text-purple-bright {
+	color: #6400FF;
+}
+
+.btn-purple {
+	color: #490088;
+	border-color: #490088;
+}
+
+.btn-purple:hover {
+    color: #ffffff;
+    background-color: #490088;
+    border-color: #490088;
+  }
+.bd-masthead {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.bd-footer {
+  font-size: 85%;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+@media (min-width: 576px) {
+	.bd-footer {
+		text-align: left;
+	}
+}
