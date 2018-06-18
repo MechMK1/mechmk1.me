@@ -1,0 +1,8 @@
+# Exclude all
+*
+
+# Include h5ai
+!h5ai/
+
+# Inlucd .gitignore
+!.gitignore
