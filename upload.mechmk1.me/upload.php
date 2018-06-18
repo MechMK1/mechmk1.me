@@ -62,7 +62,7 @@ try
 	}
 
 	//Set the filepath to /var/www/upload and the format to uniqid()+filename
-	$dir = '/var/www/filebox.mechmk1.me/';
+	$dir = '/var/www/filebox.mechmk1.me/Uploads/';
 	//$filename = sprintf('%s+%s', uniqid(), $_FILES['file']['name']);
 
 	$filename = getFileName($dir, $_FILES['file']['name']);
