@@ -1,0 +1,11 @@
+# Exclude all
+*
+
+# Include h5ai
+!h5ai/
+
+# Inluce .gitignore
+!.gitignore
+
+# Include Primary
+!Primary/
