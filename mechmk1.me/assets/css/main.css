@@ -28,15 +28,20 @@ header svg {
 }
 
 .btn-purple {
-	color: #490088;
-	border-color: #490088;
+	color: #490088!important;
+	border-color: #490088!important;
 }
 
 .btn-purple:hover {
     color: #ffffff;
     background-color: #490088;
     border-color: #490088;
-  }
+}
+
+.btn-purple:focus {
+    box-shadow: 0 0 0 0.2rem rgba(73, 0, 136, 0.5);
+}
+
 .bd-masthead {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
