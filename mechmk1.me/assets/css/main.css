@@ -27,19 +27,21 @@ header svg {
 	color: #6400FF;
 }
 
-.btn-purple {
-	color: #490088!important;
-	border-color: #490088!important;
+.btn-outline-purple {
+	color: #490088;
+	background-color: transparent;
+	background-image: none;
+	border-color: #490088;
+}
+.btn-outline-purple:not(:disabled):not(.disabled):active,
+.btn-outline-purple:hover {
+	color: #ffffff;
+	background-color: #490088;
+	border-color: #490088;
 }
 
-.btn-purple:hover {
-    color: #ffffff;
-    background-color: #490088;
-    border-color: #490088;
-}
-
-.btn-purple:focus {
-    box-shadow: 0 0 0 0.2rem rgba(73, 0, 136, 0.5);
+.btn-outline-purple:focus {
+    box-shadow: 0 0 0 0.2rem rgba(73, 0, 136, 0.5);	
 }
 
 .bd-masthead {
@@ -48,9 +50,9 @@ header svg {
 }
 
 .bd-footer {
-  font-size: 85%;
-  text-align: center;
-  background-color: #f7f7f7;
+	 font-size: 85%;
+	 text-align: center;
+	 background-color: #f7f7f7;
 }
 
 @media (min-width: 576px) {
